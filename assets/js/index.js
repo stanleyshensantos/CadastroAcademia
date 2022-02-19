@@ -1,6 +1,8 @@
-const botaoMenu = document.querySelector('.cabecalho__menu');
-const menu = document.querySelector('.menu-lateral');
-
-botaoMenu.addEventListener('click', () =>{
-    menu.classList.toggle('menu-lateral--ativo');
+const btnMobile = document.querySelector('.btn-mobile');
+function toogleMenu(){
+    const navegador = document.querySelector('.navegador');
+    navegador.classList.toggle('active');
 }
+
+btnMobile.addEventListener('click', toogleMenu);
+ 
