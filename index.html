@@ -25,10 +25,51 @@
             </ul>
         </nav>
     </header>
-    <section>
-        Conteudo
+    <main>
+        <section class="container">
+            <h2>Alunos Cadastrados</h2>
+            <label for="filtrar-tabela">Filtre:</label>
+            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite seu nome">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peso</th>
+                        <th>Altura</th>
+                        <th>Gordura</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+            </table>
+
+        </section>
+    </main>
+    <section class="container">
+        <h2 id="titulo-form">Adicionar Aluno</h2>
+        <ul id="mensagens-erro"></ul>
+        <form id="form-adiciona">
+            <div class="grupo">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite seu nome" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="peso">Peso:</label>
+                <input id="peso" name="peso" type="text" placeholder="Digite seu peso" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura</label>
+                <input id="altura" name="altura" type="text" placeholder="Digite sua altura" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="gordura">Gordura</label>
+                <input id="gordura" name="gordura" type="text" placeholder="Digite sua porcentagem de gordura" class="campo campo-medio">
+            </div>
+            <button class="botao bto-principal">Adicionar</button>
+        </form>  
     </section>
-    <script src="./assets/js/index.js"></script>
+
+    <script src="./assets/js/navegacao.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
