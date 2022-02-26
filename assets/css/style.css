@@ -85,7 +85,6 @@ label{
 .botao {
     background-color: #FFCB47;
     text-align: center;
-    font-family: inherit;
     font-weight: bold;
     color: #FFFFFF;
     width: 100%;
@@ -94,6 +93,7 @@ label{
     padding-bottom: 1.75rem;
     box-shadow: 10px 10px 30px #FFCB473D;
     border: none;
+    cursor: pointer;
 }
 .cartao{
     box-sizing: border-box;
@@ -101,7 +101,7 @@ label{
     padding-bottom: 2rem;
     background-color: #CCC;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px #000000;
 }
 
 
