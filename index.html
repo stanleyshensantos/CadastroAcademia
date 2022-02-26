@@ -25,6 +25,31 @@
             </ul>
         </nav>
     </header>
+  
+    <section class="container">
+        <h2 id="titulo-form">Adicionar Aluno</h2>
+        <ul id="mensagens-erro"></ul>
+        <form id="form-adiciona" class="cartao">
+            <div class="campo-nome">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite seu nome" class="campo campo-primario">
+            </div>
+            <div class="grupo">
+                <label for="peso">Peso:</label>
+                <input id="peso" name="peso" type="text" placeholder="Digite seu peso" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura:</label>
+                <input id="altura" name="altura" type="text" placeholder="Digite sua altura" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="gordura">Gordura:</label>
+                <input id="gordura" name="gordura" type="text" placeholder="Digite a porcentagem" class="campo campo-medio">
+            </div>
+            <button class="botao bto-principal">Adicionar</button>
+        </form>  
+    </section>
+
     <main>
         <section class="container">
             <h2>Alunos Cadastrados</h2>
@@ -41,36 +66,24 @@
                         <th>IMC</th>
                     </tr>
                 </thead>
+                <tbody id="tabela-alunos">
+                    <tr class="alunos" id="primeiro-aluno">
+                        <td class="info-nome">Stanley</td>
+                        <td class="info-peso">72</td>
+                        <td class="info-altura">1.69</td>
+                        <td class="info-gordura">10</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+                </tbody>
             </table>
-
+            <span id="erro-ajax" class="invisivel">Erro ao buscar aluno</span>
+            <button id="buscar-aluno" class="botao bto-principal">Buscar Aluno</button>
         </section>
     </main>
-    <section class="container">
-        <h2 id="titulo-form">Adicionar Aluno</h2>
-        <ul id="mensagens-erro"></ul>
-        <form id="form-adiciona">
-            <div class="grupo">
-                <label for="nome">Nome:</label>
-                <input id="nome" name="nome" type="text" placeholder="Digite seu nome" class="campo">
-            </div>
-            <div class="grupo">
-                <label for="peso">Peso:</label>
-                <input id="peso" name="peso" type="text" placeholder="Digite seu peso" class="campo campo-medio">
-            </div>
-            <div class="grupo">
-                <label for="altura">Altura</label>
-                <input id="altura" name="altura" type="text" placeholder="Digite sua altura" class="campo campo-medio">
-            </div>
-            <div class="grupo">
-                <label for="gordura">Gordura</label>
-                <input id="gordura" name="gordura" type="text" placeholder="Digite sua porcentagem de gordura" class="campo campo-medio">
-            </div>
-            <button class="botao bto-principal">Adicionar</button>
-        </form>  
-    </section>
 
     <script src="./assets/js/navegacao.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
 </body>
 
 
