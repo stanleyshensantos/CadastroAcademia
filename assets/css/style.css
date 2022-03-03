@@ -103,6 +103,26 @@ label{
     border-radius: 10px;
     box-shadow: 10px 10px 10px #000000;
 }
+table{
+    width: 100%;
+    margin-bottom: .5rem;
+    table-layout: fixed;
+    
+}
+td,  th{
+    padding: .7rem;
+    margin:0;
+    border: 1px solid #000000; 
+}
+th{
+    font-weight: bold;
+    background-color: #EEE;
+}
+label{
+    color:#555;
+    display: block;
+    margin-bottom: .2rem;
+}
 
 
 @media screen and (max-width: 600px) {
